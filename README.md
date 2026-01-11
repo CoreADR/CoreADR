@@ -31,50 +31,29 @@ We use **Architecture Decision Records (ADR)** as a first-class architectural ar
 
 ---
 
-## 🧠 ADR Philosophy
+## 🏗 Repository Structure
 
-Every significant architectural decision should be:
-
-- Documented
-- Context-driven
-- Justified with alternatives
-- Easy to revisit and evolve
-
-ADR is **not documentation for documentation’s sake** —  
-it is the **decision history of the system**.
-
----
-
-## 🏗 ADR Lifecycle
-
-ADR documents follow a clear lifecycle:
-
-`Proposed → Accepted → Deprecated / Superseded`
-
-Each change in direction is recorded, not erased.
-
----
-
-## 🚀 How to Add a New ADR
-
-1. Copy the ADR template
-2. Assign the next available ADR number
-3. Describe context, decision, and alternatives
-4. Set the appropriate status
-5. Add the entry to the decision log
-
----
-
-## 🔗 Focus Areas
-
-- Software Architecture
-- API Architecture
-- Cloud & Distributed Systems
-- Security Architecture
-- Platform & Infrastructure Design
-
----
-
-## 📄 License
-
-Unless stated otherwise, content is provided under the MIT License.
+```text
+CoreADR/
+├── README.md
+├── docs/
+│   ├── adr/
+│   │   ├── ADR-0001-template.md
+│   │   ├── ADR-0001-use-clean-architecture.md
+│   │   ├── ADR-0002-api-versioning-strategy.md
+│   │   └── ADR-0003-cloud-provider-selection.md
+│   │
+│   ├── guidelines/
+│   │   ├── architecture-principles.md
+│   │   ├── coding-standards.md
+│   │   └── security-guidelines.md
+│   │
+│   ├── reference-architectures/
+│   │   ├── backend-monolith.md
+│   │   ├── microservices.md
+│   │   └── event-driven.md
+│
+├── templates/
+│   └── adr-template.md
+│
+└── decision-log.md
